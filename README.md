@@ -1,1 +1,1 @@
-# Mips-Core accelerator
+# MIPS-Core accelerator
