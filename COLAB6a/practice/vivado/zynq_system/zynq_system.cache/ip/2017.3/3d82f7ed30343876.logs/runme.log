@@ -1,0 +1,810 @@
+
+*** Running vivado
+    with args -log zynq_system_mips_core_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source zynq_system_mips_core_0_0.tcl
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:22 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source zynq_system_mips_core_0_0.tcl -notrace
+Command: synth_design -top zynq_system_mips_core_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10660 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 395.906 ; gain = 98.277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'zynq_system_mips_core_0_0' [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ip/zynq_system_mips_core_0_0/synth/zynq_system_mips_core_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'cpu_ahb_if' [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/cpu_ahb_if.v:1]
+INFO: [Synth 8-638] synthesizing module 'cpu_top' [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/cpu_top.v:1]
+INFO: [Synth 8-638] synthesizing module 'if_pipe' [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/if_pipe.v:1]
+INFO: [Synth 8-638] synthesizing module 'sram' [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/sram.v:1]
+INFO: [Synth 8-256] done synthesizing module 'sram' (1#1) [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/sram.v:1]
+WARNING: [Synth 8-350] instance 'instr_mem' of module 'sram' requires 7 connections, but only 6 given [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/if_pipe.v:61]
+INFO: [Synth 8-256] done synthesizing module 'if_pipe' (2#1) [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/if_pipe.v:1]
+INFO: [Synth 8-638] synthesizing module 'id_pipe' [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/id_pipe.v:1]
+INFO: [Synth 8-638] synthesizing module 'rf' [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/rf.v:1]
+WARNING: [Synth 8-3848] Net rd_data in module/entity rf does not have driver. [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/rf.v:25]
+INFO: [Synth 8-256] done synthesizing module 'rf' (3#1) [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/rf.v:1]
+WARNING: [Synth 8-350] instance 'rf' of module 'rf' requires 15 connections, but only 14 given [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/id_pipe.v:84]
+INFO: [Synth 8-638] synthesizing module 'fp_rf' [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/fp_rf.v:3]
+WARNING: [Synth 8-3848] Net fp_rd_data in module/entity fp_rf does not have driver. [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/fp_rf.v:30]
+INFO: [Synth 8-256] done synthesizing module 'fp_rf' (4#1) [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/fp_rf.v:3]
+WARNING: [Synth 8-350] instance 'fp_rf' of module 'fp_rf' requires 13 connections, but only 12 given [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/id_pipe.v:102]
+INFO: [Synth 8-638] synthesizing module 'id_dcu' [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/id_dcu.v:1]
+	Parameter R_TYPE bound to: 6'b000000 
+	Parameter ADD bound to: 6'b100000 
+	Parameter SUB bound to: 6'b100010 
+	Parameter AND bound to: 6'b100100 
+	Parameter OR bound to: 6'b100101 
+	Parameter SLT bound to: 6'b101010 
+	Parameter ADDI bound to: 6'b001000 
+	Parameter LW bound to: 6'b100011 
+	Parameter SW bound to: 6'b101011 
+	Parameter BEQ bound to: 6'b000100 
+	Parameter BNE bound to: 6'b000101 
+	Parameter J bound to: 6'b000010 
+	Parameter LWC1 bound to: 6'b110001 
+	Parameter SWC1 bound to: 6'b111001 
+	Parameter F_R_TYPE bound to: 6'b010001 
+	Parameter ADD_S bound to: 6'b000000 
+	Parameter MUL_S bound to: 6'b000010 
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/id_dcu.v:154]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/id_dcu.v:264]
+INFO: [Synth 8-256] done synthesizing module 'id_dcu' (5#1) [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/id_dcu.v:1]
+INFO: [Synth 8-256] done synthesizing module 'id_pipe' (6#1) [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/id_pipe.v:1]
+INFO: [Synth 8-638] synthesizing module 'ex_pipe' [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/ex_pipe.v:1]
+INFO: [Synth 8-638] synthesizing module 'fp_add' [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ip/zynq_system_mips_core_0_0/ip/fp_add/synth/fp_add.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_5' declared at 'c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ip/zynq_system_mips_core_0_0/ip/fp_mul/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_5' [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ip/zynq_system_mips_core_0_0/ip/fp_add/synth/fp_add.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'fp_add' (24#1) [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ip/zynq_system_mips_core_0_0/ip/fp_add/synth/fp_add.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'fp_mul' [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ip/zynq_system_mips_core_0_0/ip/fp_mul/synth/fp_mul.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 1 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_5' declared at 'c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ip/zynq_system_mips_core_0_0/ip/fp_mul/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_5' [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ip/zynq_system_mips_core_0_0/ip/fp_mul/synth/fp_mul.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'fp_mul' (37#1) [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ip/zynq_system_mips_core_0_0/ip/fp_mul/synth/fp_mul.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element alu_ctrl_xm_reg was removed.  [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/ex_pipe.v:84]
+WARNING: [Synth 8-5788] Register mem_data_fp_xm_reg in module ex_pipe is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/ex_pipe.v:92]
+INFO: [Synth 8-256] done synthesizing module 'ex_pipe' (38#1) [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/ex_pipe.v:1]
+INFO: [Synth 8-638] synthesizing module 'mem_pipe' [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/mem_pipe.v:1]
+WARNING: [Synth 8-350] instance 'data_mem' of module 'sram' requires 7 connections, but only 6 given [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/mem_pipe.v:116]
+WARNING: [Synth 8-5788] Register fp_operation_mw_reg in module mem_pipe is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/mem_pipe.v:108]
+WARNING: [Synth 8-5788] Register MW_mem_read_xm_reg in module mem_pipe is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/mem_pipe.v:109]
+INFO: [Synth 8-256] done synthesizing module 'mem_pipe' (39#1) [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/mem_pipe.v:1]
+INFO: [Synth 8-256] done synthesizing module 'cpu_top' (40#1) [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/cpu_top.v:1]
+INFO: [Synth 8-638] synthesizing module 'ahb_ctrl' [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/ahb_ctrl.v:9]
+	Parameter cpu_rstn_addr bound to: 1073774596 - type: integer 
+	Parameter im_base bound to: 1073741824 - type: integer 
+	Parameter dm_base bound to: 1073750016 - type: integer 
+	Parameter rf_base bound to: 1073758208 - type: integer 
+	Parameter mem_size bound to: 8192 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ahb_ctrl' (41#1) [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/ahb_ctrl.v:9]
+INFO: [Synth 8-256] done synthesizing module 'cpu_ahb_if' (42#1) [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/cpu_ahb_if.v:1]
+INFO: [Synth 8-256] done synthesizing module 'zynq_system_mips_core_0_0' (43#1) [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ip/zynq_system_mips_core_0_0/synth/zynq_system_mips_core_0_0.v:57]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port CLK
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized31 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized31 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized31 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized31 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized31 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized8 has unconnected port B[7]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized55 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized55 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized55 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized55 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized55 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized25 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized25 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized25 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized25 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized25 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized23 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized23 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized23 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized23 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized23 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port NORMALIZE[1]
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port FIXED_POINT
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port FIX_MANT_SIGN
+WARNING: [Synth 8-3331] design flt_round_bit has unconnected port SIGN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized35 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized35 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized35 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized35 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized35 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized3 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized53 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized53 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized53 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized53 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized53 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized51 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized51 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized51 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized51 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized51 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[47]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[46]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[45]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[44]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[43]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[42]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[41]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[40]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[39]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[38]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[37]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[36]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[35]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[34]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[33]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[32]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[31]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[30]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[29]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[28]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[27]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[26]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[25]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[24]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[23]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[22]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[21]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[20]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[19]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[18]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[17]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[16]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[15]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[14]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[13]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[12]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[11]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[10]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[9]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[8]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[7]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[6]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[5]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[4]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[3]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[2]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[1]
+WARNING: [Synth 8-3331] design flt_mult_round has unconnected port MANT_CASC_IN[0]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_4_viv__parameterized47 has unconnected port CLK
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 513.137 ; gain = 215.508
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 513.137 ; gain = 215.508
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 172 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.runs/zynq_system_mips_core_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.runs/zynq_system_mips_core_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 728.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 728.801 ; gain = 431.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 728.801 ; gain = 431.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/cpu_top/EXE/fp_add. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/cpu_top/EXE/fp_mul. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 728.801 ; gain = 431.172
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "REG_I_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_I_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "REG_F_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4471] merging register 'mem_read_dx_reg' into 'mem_to_reg_dx_reg' [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/id_dcu.v:136]
+WARNING: [Synth 8-6014] Unused sequential element mem_read_dx_reg was removed.  [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/id_dcu.v:136]
+INFO: [Synth 8-5587] ROM size for "alu_src2" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "alu_src2_fp" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "det_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/ex_pipe.v:106]
+INFO: [Synth 8-5544] ROM "alu_out_xm" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "alu_out_fp_xm" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "cpu_rstn" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'ahb_read_data_reg' [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/ahb_ctrl.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'ahb_im_addr_reg' [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/ahb_ctrl.v:118]
+WARNING: [Synth 8-327] inferring latch for variable 'ahb_dm_addr_reg' [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/ahb_ctrl.v:134]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 728.801 ; gain = 431.172
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/cpu_top/EXE/fp_add/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/cpu_top/EXE/fp_add/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/cpu_top/EXE/fp_add/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/cpu_top/EXE/fp_add/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized0) to 'inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/A_EXP_DELAY' (delay__parameterized18) to 'inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.a_exp_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/cpu_top/EXE/fp_mul/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/cpu_top/EXE/fp_mul/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/cpu_top/EXE/fp_mul/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/cpu_top/EXE/fp_mul/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_INC_DELAY' (delay__parameterized0) to 'inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/NORMALIZE_DEL' (delay__parameterized13) to 'inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/NORMALIZE_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized18) to 'inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized18) to 'inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element instr_mem/addr_reg_reg was removed.  [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/sram.v:12]
+INFO: [Synth 8-5544] ROM "id_dcu/fp_ls" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element data_mem/addr_reg_reg was removed.  [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ipshared/8e67/imports/hardware/sram.v:12]
+INFO: [Synth 8-5545] ROM "inst/ahb_ctrl/cpu_rstn" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3917] design zynq_system_mips_core_0_0 has port S_HREADY driven by constant 1
+INFO: [Synth 8-3917] design zynq_system_mips_core_0_0 has port S_HRESP driven by constant 0
+INFO: [Synth 8-4652] Swapped enable and write-enable on 2 RAM instances of RAM instr_mem/mem_reg to conserve power
+INFO: [Synth 8-4652] Swapped enable and write-enable on 2 RAM instances of RAM data_mem/mem_reg to conserve power
+RAM Pipeline Warning: Read Address Register Found For RAM instr_mem/mem_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM data_mem/mem_reg. We will not be able to pipeline it. This may degrade performance. 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/cpu_top /ID/\id_dcu/jump_addr_dx_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/cpu_top/ID/id_dcu/imm_reg[0]' (FDC) to 'inst/cpu_top/ID/id_dcu/jump_addr_dx_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/cpu_top/ID/id_dcu/imm_reg[1]' (FDC) to 'inst/cpu_top/ID/id_dcu/jump_addr_dx_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/cpu_top/ID/id_dcu/imm_reg[2]' (FDC) to 'inst/cpu_top/ID/id_dcu/jump_addr_dx_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/cpu_top/ID/id_dcu/imm_reg[3]' (FDC) to 'inst/cpu_top/ID/id_dcu/jump_addr_dx_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/cpu_top/ID/id_dcu/imm_reg[4]' (FDC) to 'inst/cpu_top/ID/id_dcu/jump_addr_dx_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/cpu_top/ID/id_dcu/imm_reg[5]' (FDC) to 'inst/cpu_top/ID/id_dcu/jump_addr_dx_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/cpu_top/ID/id_dcu/imm_reg[6]' (FDC) to 'inst/cpu_top/ID/id_dcu/jump_addr_dx_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/cpu_top/ID/id_dcu/imm_reg[7]' (FDC) to 'inst/cpu_top/ID/id_dcu/jump_addr_dx_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/cpu_top/ID/id_dcu/imm_reg[8]' (FDC) to 'inst/cpu_top/ID/id_dcu/jump_addr_dx_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/cpu_top/EXE/mem_read_xm_reg' (FDC) to 'inst/cpu_top/EXE/mem_to_reg_xm_reg'
+WARNING: [Synth 8-3332] Sequential element (i_0) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (i_1) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (i_2) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (i_3) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (i_4) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (i_5) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (i_6) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (i_7) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (i_8) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (i_9) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (i_10) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (fetch_pc_reg[31]) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (fetch_pc_reg[30]) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (fetch_pc_reg[29]) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (fetch_pc_reg[28]) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (fetch_pc_reg[27]) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (fetch_pc_reg[26]) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (fetch_pc_reg[25]) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (fetch_pc_reg[24]) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (fetch_pc_reg[23]) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (fetch_pc_reg[22]) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (fetch_pc_reg[21]) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (fetch_pc_reg[20]) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (fetch_pc_reg[19]) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (fetch_pc_reg[18]) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (fetch_pc_reg[17]) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (fetch_pc_reg[16]) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (fetch_pc_reg[15]) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (fetch_pc_reg[14]) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (fetch_pc_reg[13]) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (fetch_pc_reg[12]) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (fetch_pc_reg[11]) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (fetch_pc_reg[0]) is unused and will be removed from module if_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/jump_addr_dx_reg[31]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/jump_addr_dx_reg[30]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/jump_addr_dx_reg[29]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/jump_addr_dx_reg[28]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/jump_addr_dx_reg[27]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/jump_addr_dx_reg[26]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/jump_addr_dx_reg[25]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/jump_addr_dx_reg[24]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/jump_addr_dx_reg[23]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/jump_addr_dx_reg[22]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/jump_addr_dx_reg[21]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/jump_addr_dx_reg[20]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/jump_addr_dx_reg[19]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/jump_addr_dx_reg[18]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/jump_addr_dx_reg[17]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/jump_addr_dx_reg[16]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/jump_addr_dx_reg[15]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/jump_addr_dx_reg[14]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/jump_addr_dx_reg[13]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/jump_addr_dx_reg[12]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/jump_addr_dx_reg[11]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/jump_addr_dx_reg[1]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/jump_addr_dx_reg[0]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/pc_dx_reg[31]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/pc_dx_reg[30]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/pc_dx_reg[29]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/pc_dx_reg[28]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/pc_dx_reg[27]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/pc_dx_reg[26]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/pc_dx_reg[25]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/pc_dx_reg[24]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/pc_dx_reg[23]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/pc_dx_reg[22]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/pc_dx_reg[21]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/pc_dx_reg[20]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/pc_dx_reg[19]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/pc_dx_reg[18]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/pc_dx_reg[17]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/pc_dx_reg[16]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/pc_dx_reg[15]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/pc_dx_reg[14]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/pc_dx_reg[13]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/pc_dx_reg[12]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/pc_dx_reg[11]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/pc_dx_reg[0]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/imm_reg[15]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/imm_reg[14]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/imm_reg[13]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/imm_reg[12]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/imm_reg[11]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/imm_reg[10]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (id_dcu/imm_reg[9]) is unused and will be removed from module id_pipe.
+WARNING: [Synth 8-3332] Sequential element (branch_addr_xm_reg[31]) is unused and will be removed from module ex_pipe.
+WARNING: [Synth 8-3332] Sequential element (branch_addr_xm_reg[30]) is unused and will be removed from module ex_pipe.
+WARNING: [Synth 8-3332] Sequential element (branch_addr_xm_reg[29]) is unused and will be removed from module ex_pipe.
+WARNING: [Synth 8-3332] Sequential element (branch_addr_xm_reg[28]) is unused and will be removed from module ex_pipe.
+WARNING: [Synth 8-3332] Sequential element (branch_addr_xm_reg[27]) is unused and will be removed from module ex_pipe.
+WARNING: [Synth 8-3332] Sequential element (branch_addr_xm_reg[26]) is unused and will be removed from module ex_pipe.
+WARNING: [Synth 8-3332] Sequential element (branch_addr_xm_reg[25]) is unused and will be removed from module ex_pipe.
+WARNING: [Synth 8-3332] Sequential element (branch_addr_xm_reg[24]) is unused and will be removed from module ex_pipe.
+WARNING: [Synth 8-3332] Sequential element (branch_addr_xm_reg[23]) is unused and will be removed from module ex_pipe.
+WARNING: [Synth 8-3332] Sequential element (branch_addr_xm_reg[22]) is unused and will be removed from module ex_pipe.
+WARNING: [Synth 8-3332] Sequential element (branch_addr_xm_reg[21]) is unused and will be removed from module ex_pipe.
+WARNING: [Synth 8-3332] Sequential element (branch_addr_xm_reg[20]) is unused and will be removed from module ex_pipe.
+WARNING: [Synth 8-3332] Sequential element (branch_addr_xm_reg[19]) is unused and will be removed from module ex_pipe.
+WARNING: [Synth 8-3332] Sequential element (branch_addr_xm_reg[18]) is unused and will be removed from module ex_pipe.
+WARNING: [Synth 8-3332] Sequential element (branch_addr_xm_reg[17]) is unused and will be removed from module ex_pipe.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 779.129 ; gain = 481.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 857.156 ; gain = 559.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 861.164 ; gain = 563.535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst/cpu_top/IF/instr_mem/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/cpu_top/IF/instr_mem/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/cpu_top/MEM/data_mem/mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/cpu_top/MEM/data_mem/mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 885.234 ; gain = 587.605
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 885.234 ; gain = 587.605
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 885.234 ; gain = 587.605
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 885.234 ; gain = 587.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 885.234 ; gain = 587.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 885.234 ; gain = 587.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 885.234 ; gain = 587.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    35|
+|2     |DSP48E1   |     1|
+|3     |DSP48E1_1 |     1|
+|4     |DSP48E1_2 |     1|
+|5     |DSP48E1_3 |     1|
+|6     |LUT1      |    30|
+|7     |LUT2      |   150|
+|8     |LUT3      |   137|
+|9     |LUT4      |   155|
+|10    |LUT5      |   359|
+|11    |LUT6      |  2227|
+|12    |MUXCY     |   108|
+|13    |MUXF7     |   961|
+|14    |MUXF8     |    64|
+|15    |RAMB36E1  |     4|
+|16    |XORCY     |    56|
+|17    |FDCE      |  2574|
+|18    |FDRE      |    35|
+|19    |LD        |    54|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 885.234 ; gain = 587.605
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 309 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:01:09 . Memory (MB): peak = 885.234 ; gain = 371.941
+Synthesis Optimization Complete : Time (s): cpu = 00:01:16 ; elapsed = 00:01:18 . Memory (MB): peak = 885.234 ; gain = 587.605
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1286 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 83 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 29 instances
+  LD => LDCE: 54 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+189 Infos, 216 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:21 . Memory (MB): peak = 885.234 ; gain = 594.812
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.runs/zynq_system_mips_core_0_0_synth_1/zynq_system_mips_core_0_0.dcp' has been generated.
