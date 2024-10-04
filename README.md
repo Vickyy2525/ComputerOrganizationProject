@@ -1,6 +1,6 @@
 # MIPS-Core accelerator
 ## 1. 簡介
-對 MNIST 手寫數字辨識的全連接深度神經網路 (FC-DNN) 進行加速，最佳化硬體 Pipeline 結構並引入 Forwarding 技術，來降低運算時間與提升效能。
+對 MNIST 手寫數字辨識的全連接深度神經網路 (FC-DNN) 進行加速，最佳化硬體 Pipeline 結構並引入 Forwarding 技術，來降低運算時間與提升效能。程式碼主要在 COLAB6b/practice 中，測試答案正確後，在 FPGA 板上運行，實測未以軟體和硬體最佳化前後的運算時間差距，並依此撰寫 5 頁的報告。
 
 ## 2. 最佳化方式
 - **Forwarding 機制**：透過四條 Forwarding 接線來解決資料相依 (Data Hazard) 問題，減少 NOP 指令的使用，避免管線停滯
@@ -13,9 +13,9 @@
 - **`ex_pipe.v`**: 執行階段的 Pipeline module
 - **`id_pipe.v`**: 指令解碼階段的 Pipeline module 
 - **`if_pipe.v`**: 指令擷取階段的 Pipeline module 
-- **mem_pipe.v**: Memory 階段的 Pipeline module，負責處理 Load / Store 指令，確保記憶體存取的正確性與 Forwarding 的即時性
-- **rf.v**: 暫存器檔 module，用於儲存整數與浮點數的運算結果，負責在各 Pipeline 階段間傳遞資料
-- **sram.v**: 靜態隨機存取記憶體 (SRAM) module，用於暫存神經網路權重或中間結果，提升記憶體存取的效能
+- **`mem_pipe.v`**: Memory 階段的 Pipeline module，負責處理 Load / Store 指令，確保記憶體存取的正確性與 Forwarding 的即時性
+- **`rf.v`**: 暫存器檔 module，用於儲存整數與浮點數的運算結果，負責在各 Pipeline 階段間傳遞資料
+- **`sram.v`**: 靜態隨機存取記憶體 (SRAM) module，用於暫存神經網路權重或中間結果，提升記憶體存取的效能
 
 ## 4. 最佳化效果
 - **執行指令數量減少**：從最佳化之前的 36 個指令降至 29 個指令
