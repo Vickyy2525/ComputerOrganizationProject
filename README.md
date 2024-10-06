@@ -1,6 +1,7 @@
 # MIPS-Core accelerator
 ## 1. 簡介
 對 MNIST 手寫數字辨識的全連接深度神經網路 (FC-DNN) 進行加速，最佳化硬體 Pipeline 結構並引入 Forwarding 技術，來降低運算時間與提升效能。修改後的程式碼主要在 `COLAB6a/practice/hardware` 中，測試答案正確後，複製 `COLAB6a/practice/hardware/im_data/im.txt` 的組語，取代 `COLAB6a/practice/software/im_data/im.txt`，在 FPGA 板上運行並記錄運算時間，實測以軟體和硬體方式最佳化前後的運算時間差距，並依此撰寫 5 頁的報告。
+註：目前的 `COLAB6a/practice/hardware/im_data/im.txt` 為最佳化後的組語，`COLAB6a/practice/software/im_data/im.txt` 為未經軟硬體最佳化的組語
 
 ## 2. 最佳化方式
 - **Forwarding 機制**：透過四條 Forwarding 接線來解決資料相依 (Data Hazard) 問題，減少 NOP 指令的使用，避免管線停滯
