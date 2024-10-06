@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.runs/impl_1'
+HD_PWD='C:/Users/ryan4/Desktop/CO_LAB/LAB6/homework/vivado/zynq_system/zynq_system.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log zynq_system_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source zynq_system_wrapper.tcl -notrace
+EAStep vivado -log zynq_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source zynq_wrapper.tcl -notrace
 
 

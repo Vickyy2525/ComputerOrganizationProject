@@ -2,7 +2,7 @@ module if_pipe(
 	clk,
 	rstn,
 	jump_dx,
-	branch_dx,
+	branch_xm,
 	jump_addr,
 	branch_addr_xm,
 
@@ -17,7 +17,7 @@ module if_pipe(
 input			  		   clk;
 input			  		   rstn;
 input			  		   jump_dx;
-input			  		   branch_dx;
+input			  		   branch_xm;
 input 				[31:0] jump_addr;
 input 				[31:0] branch_addr_xm;
 output reg 			[31:0] fetch_pc;
@@ -55,15 +55,15 @@ begin
 	if(!rstn)
 		fetch_pc <= 32'd0;
 	else
-		fetch_pc <= (branch_dx) ? branch_addr_xm : ((jump_dx) ? jump_addr : (fetch_pc + 4)) ;
+		fetch_pc <= (branch_xm) ? branch_addr_xm : ((jump_dx) ? jump_addr : (fetch_pc + 4)) ;
 end
 
 sram instr_mem(
-	.addra				(instr_mem_addr		),
-    .clka				(clk				),
+    .addra				(instr_mem_addr		),
+    .clka				(clk			),
     .dina				(instr_mem_din		),
     .douta				(instr_mem_dout		),
-    .ena				(1'b1				),
+    .ena				(1'b1			),
     .wea				(instr_mem_we		)
 );
 

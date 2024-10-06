@@ -37,6 +37,7 @@ integer                   dm_addr;
 integer                   i;
 integer                   cycles;
 integer                   rf_6_data;
+integer                   ans_data;
 
 reg                [31:0] instr[0:2048];
 
@@ -60,6 +61,7 @@ initial begin
     im_addr <= `im_base;
     dm_addr <= `dm_base + 32'd4;
     rf_6_data <= 32'd0;
+    ans_data  <= 32'd0;
     #10;
     rstn <= 1'b0;
     #10;
@@ -69,7 +71,7 @@ initial begin
     $readmemh("im_data/im.txt", instr);
 
     //write im
-    for(i = 0; i < 40; i = i + 1) begin
+    for(i = 0; i < 29; i = i + 1) begin
         ahb_write(im_addr, instr[i]);
         im_addr = im_addr + 32'd4;
     end
@@ -93,9 +95,9 @@ initial begin
     ahb_write(`cpu_rstn, 32'd0);
     
     //read_dm
-    ahb_read(`dm_base + (`acc_num * 4) + 4, rf_6_data);
-    ahb_read(`dm_base + (`acc_num * 4) + 4, rf_6_data);
-    $display("ans: %h", rf_6_data);
+    ahb_read(`dm_base + (`acc_num * 4) + 4, ans_data);
+    ahb_read(`dm_base + (`acc_num * 4) + 4, ans_data);
+    $display("ans: %h", ans_data);
 
     $finish;
 end

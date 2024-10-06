@@ -49,6 +49,12 @@ wire 				[31:0] mem_data_dx;
 wire 				[31:0] mem_data_fp_dx;
 wire 				 [3:0] alu_ctrl;
 
+wire 				[4:0] fp_rs_addr_reg;
+wire 				[4:0] fp_rt_addr_reg;
+wire 				[4:0] fp_rs_addr;
+wire 				[4:0] rs_addr;
+
+
 // execute
 wire 					   mem_to_reg_xm;
 wire 					   reg_write_xm;	
@@ -69,15 +75,15 @@ wire 					   reg_write_mw;
 wire 					   fp_operation_mw;
 wire 				[31:0] mem_data_to_reg;
 wire 				[31:0] mem_data_to_reg_fp;
-wire 				[31:0] alu_out_mw;
-wire 				[31:0] alu_out_fp_mw;
-wire 				 [4:0] rd_addr_mw;
+wire 				[31:0] alu_out_mw;			// wire 1
+wire 				[31:0] alu_out_fp_mw;		// wire 3
+wire 				 [4:0] rd_addr_mw;			// wire 1 & 3
 
 if_pipe IF(
 	.clk				(clk				),
 	.rstn				(rstn				),
 	.jump_dx			(jump_dx			),
-	.branch_dx			(branch_xm			),
+	.branch_xm			(branch_xm			),
 	.jump_addr			(jump_addr_dx		),
 	.branch_addr_xm		(branch_addr_xm		),
 	.fetch_pc			(fetch_pc			),
@@ -99,7 +105,7 @@ id_pipe ID(
 	.mem_data_to_reg	(mem_data_to_reg	),
 	.mem_data_to_reg_fp	(mem_data_to_reg_fp	),
 	.alu_out_mw			(alu_out_mw			),
-	.alu_out_fp_mw		(alu_out_fp_mw		),
+	.alu_out_fp_mw		(alu_out_fp_mw		),		// wire 3
 	.fp_operation_mw	(fp_operation_mw	),
 	.mem_to_reg_dx		(mem_to_reg_dx		),
 	.reg_write_dx		(reg_write_dx		),
@@ -115,12 +121,16 @@ id_pipe ID(
 	.alu_src1_fp		(alu_src1_fp		),
 	.alu_src2_fp		(alu_src2_fp		),
 	.imm				(imm				),
-	.rd_addr			(rd_addr_dx			),
+	.rd_addr_dx			(rd_addr_dx			),
 	.mem_data			(mem_data_dx		),
 	.mem_data_fp		(mem_data_fp_dx		),
 	.fp_operation_dx	(fp_operation_dx	),
 	.ahb_rf_addr		(ahb_rf_addr		),
-	.ahb_rf_data		(ahb_rf_data		)
+	.ahb_rf_data		(ahb_rf_data		),
+	.rs_addr			(rs_addr			),
+	.fp_rs_addr			(fp_rs_addr			),
+	.fp_rs_addr_reg		(fp_rs_addr_reg		),
+	.fp_rt_addr_reg		(fp_rt_addr_reg		)
 );
 
 ex_pipe EXE(
@@ -153,7 +163,18 @@ ex_pipe EXE(
 	.mem_data_xm		(mem_data_xm		),
 	.mem_data_fp_xm		(mem_data_fp_xm		),
 	.branch_addr_xm		(branch_addr_xm		),
-	.fp_operation_xm	(fp_operation_xm	)
+	.fp_operation_xm	(fp_operation_xm	),
+
+	
+	.rd_addr_mw				(rd_addr_mw		),		// wire 1 & 3
+	.reg_write_mw			(reg_write_mw	),		// wire 1 & 3
+	.alu_out_mw				(alu_out_mw		),		// wire 1
+	.alu_out_fp_mw			(alu_out_fp_mw	),		// wire 3
+	.fp_rs_addr_reg			(fp_rs_addr_reg	),		// wire 2 & 3
+	.fp_rt_addr_reg			(fp_rt_addr_reg	),		// wire 4
+	.rs_addr				(rs_addr		),		// wire 1
+	.fp_rs_addr				(fp_rs_addr		),
+	.mem_data_to_reg_fp		(mem_data_to_reg_fp)	// wire3
 );
 
 mem_pipe MEM(

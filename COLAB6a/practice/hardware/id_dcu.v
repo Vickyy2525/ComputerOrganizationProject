@@ -45,9 +45,14 @@ module id_dcu #(
 	alu_src1_fp,
 	alu_src2_fp,
 	imm,
-	rd_addr,
+	rd_addr_dx,
 	mem_data,
-	mem_data_fp
+	mem_data_fp,
+
+	// rs_addr_reg,
+    // rt_addr_reg,
+	fp_rs_addr_reg,
+    fp_rt_addr_reg
 );
 input			  		   clk;
 input			  		   rstn;
@@ -68,7 +73,7 @@ output reg          [31:0] alu_src2;
 output reg          [31:0] alu_src1_fp;
 output reg          [31:0] alu_src2_fp;
 output reg 			[15:0] imm;
-output reg 			 [4:0] rd_addr;
+output reg 			 [4:0] rd_addr_dx;
 output reg 			[31:0] mem_data;
 output reg 			[31:0] mem_data_fp;
 
@@ -82,13 +87,18 @@ input               [31:0] fp_rt_data;
 output 				 [4:0] fp_rs_addr;
 output 				 [4:0] fp_rt_addr;
 
+// output				 [4:0] rs_addr_reg;
+// output				 [4:0] rt_addr_reg;
+output	reg			 [4:0] fp_rs_addr_reg;	// delay one clock (wire 2)
+output	reg			 [4:0] fp_rt_addr_reg;	// delay one clock (wire 4)
+
 reg 					   fp_ls;
 
 
 assign rs_addr = instr[25:21];
 assign rt_addr = instr[20:16];
 
-assign fp_rs_addr = instr[15:11];
+assign fp_rs_addr = fp_ls ? instr[25:21] : instr[15:11];
 assign fp_rt_addr = instr[20:16];
 
 always @(*) begin
@@ -113,6 +123,11 @@ begin
 	    pc_dx			<= 32'b0;
 		jump_dx 		<= 1'b0;
 		jump_addr_dx 	<= 32'b0;
+
+		// rs_addr_reg		<= 5'b0;
+		// rt_addr_reg		<= 5'b0;
+		fp_rs_addr_reg 		<= 5'b0;
+		fp_rt_addr_reg		<= 5'b0;
 	end else begin
 		alu_src1 		<= rs_data;
 		alu_src1_fp 	<= fp_ls ? rs_data : fp_rs_data;
@@ -122,8 +137,14 @@ begin
 	    pc_dx 			<= fetch_pc;
 		jump_dx			<= (instr[31:26]==6'd2) ? 1'b1 : 1'b0;
 		jump_addr_dx	<= {fetch_pc[31:28], instr[25:0], 2'b0};
+
+		// rs_addr_reg		<= rs_addr;
+		// rt_addr_reg		<= rt_addr;
+		fp_rs_addr_reg 		<= fp_rs_addr;
+		fp_rt_addr_reg		<= fp_rt_addr;
 	end
 end
+
 
 //instruction decoding
 always @(posedge clk or negedge rstn)
@@ -137,7 +158,7 @@ begin
 		mem_write_dx	<= 1'b0;
 		branch_dx  		<= 1'b0;
 		alu_ctrl		<= 4'b0;
-		rd_addr 		<=5'b0;
+		rd_addr_dx 		<=5'b0;
 		fp_operation_dx <= 1'b0;
 		
    end else begin
@@ -145,7 +166,7 @@ begin
 		R_TYPE:
 			begin
 				alu_src2 		 <= rt_data;
-				rd_addr 		 <= instr[15:11];
+				rd_addr_dx 		 <= instr[15:11];
 				mem_to_reg_dx	 <= 1'b0;
 				reg_write_dx	 <= 1'b1;
 				mem_read_dx 	 <= 1'b0;
@@ -167,7 +188,7 @@ begin
 			end
 		ADDI:  begin
 				alu_src2 		 <= {{16{instr[15]}}, instr[15:0]};
-			    rd_addr 		 <= instr[20:16];
+			    rd_addr_dx 		 <= instr[20:16];
 			    mem_to_reg_dx	 <= 1'b0;
 			    reg_write_dx	 <= 1'b1;
 			    mem_read_dx 	 <= 1'b0;
@@ -178,7 +199,7 @@ begin
 		 	end
 		LW:  begin
 				alu_src2 		 <= {{16{instr[15]}}, instr[15:0]};
-			    rd_addr 		 <= instr[20:16];
+			    rd_addr_dx 		 <= instr[20:16];
 			    mem_to_reg_dx	 <= 1'b1;
 			    reg_write_dx	 <= 1'b1;
 			    mem_read_dx  	 <= 1'b1;
@@ -189,7 +210,7 @@ begin
 		 	end
 		SW:  begin
 				alu_src2 		 <= {{16{instr[15]}}, instr[15:0]};
-			    rd_addr 		 <= instr[20:16];
+			    rd_addr_dx 		 <= instr[20:16];
 			    mem_to_reg_dx	 <= 1'b0;
 			    reg_write_dx	 <= 1'b0;
 			    mem_read_dx 	 <= 1'b0;
@@ -200,7 +221,7 @@ begin
 		 	end
 		BEQ:   begin
 				alu_src2 		 <= rt_data;
-			    rd_addr 		 <= instr[20:16];
+			    rd_addr_dx 		 <= instr[20:16];
 			    mem_to_reg_dx	 <= 1'b0;
 			    reg_write_dx	 <= 1'b0;
 			    mem_read_dx 	 <= 1'b0;
@@ -211,7 +232,7 @@ begin
 			end
 		BNE:   begin
 			    alu_src2 		 <= rt_data;
-			    rd_addr 		 <= instr[20:16];
+			    rd_addr_dx 		 <= instr[20:16];
 			    mem_to_reg_dx	 <= 1'b0;
 			    reg_write_dx	 <= 1'b0;
 			    mem_read_dx 	 <= 1'b0;
@@ -222,7 +243,7 @@ begin
 			end
 		J: begin 
 			    alu_src2 		 <= rt_data;
-			    rd_addr 		 <= instr[20:16];
+			    rd_addr_dx 		 <= instr[20:16];
 			    mem_to_reg_dx	 <= 1'b0;
 			    reg_write_dx	 <= 1'b0;
 			    mem_read_dx 	 <= 1'b0;
@@ -233,7 +254,7 @@ begin
 			end
 		LWC1:  begin
 				alu_src2_fp		 <= {{16{instr[15]}}, instr[15:0]};
-			    rd_addr 		 <= instr[20:16];
+			    rd_addr_dx 		 <= instr[20:16];
 			    mem_to_reg_dx	 <= 1'b1;
 			    reg_write_dx	 <= 1'b1;
 			    mem_read_dx 	 <= 1'b1;
@@ -244,7 +265,7 @@ begin
 		 	end
 		SWC1:  begin
 				alu_src2_fp		 <= {{16{instr[15]}}, instr[15:0]};
-			    rd_addr 		 <= instr[20:16];
+			    rd_addr_dx 		 <= instr[20:16];
 			    mem_to_reg_dx	 <= 1'b0;
 			    reg_write_dx	 <= 1'b0;
 			    mem_read_dx 	 <= 1'b0;
@@ -255,7 +276,7 @@ begin
 		 	end
 		F_R_TYPE:  begin
 				alu_src2_fp		 <= fp_rt_data;
-			    rd_addr 		 <= instr[10:6];
+			    rd_addr_dx 		 <= instr[10:6];
 			    mem_to_reg_dx	 <= 1'b0;
 			    reg_write_dx	 <= 1'b1;
 			    mem_read_dx 	 <= 1'b0;
@@ -271,7 +292,7 @@ begin
 		 	end
 			default: begin
 				alu_src2_fp		 <= alu_src2_fp;
-			    rd_addr 		 <= rd_addr;
+			    rd_addr_dx 		 <= rd_addr_dx;
 			    mem_to_reg_dx	 <= mem_to_reg_dx;
 			    reg_write_dx	 <= reg_write_dx;
 			    mem_read_dx 	 <= mem_read_dx;

@@ -1,0 +1,7 @@
+vhdl xil_defaultlib  \
+"../../../bd/zynq/ip/zynq_axi_ahblite_bridge_0_0/sim/zynq_axi_ahblite_bridge_0_0.vhd" \
+"../../../bd/zynq/ip/zynq_proc_sys_reset_0_0/sim/zynq_proc_sys_reset_0_0.vhd" \
+"../../../bd/zynq/ip/zynq_mips_core_0_0/ip/fp_add/sim/fp_add.vhd" \
+"../../../bd/zynq/ip/zynq_mips_core_0_0/ip/fp_mul/sim/fp_mul.vhd" \
+
+nosort

@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log zynq_system_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source zynq_system_wrapper.tcl -notrace
+    with args -log zynq_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source zynq_wrapper.tcl -notrace
 
 
 ****** Vivado v2017.3 (64-bit)
@@ -8,38 +8,37 @@
   **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 
-source zynq_system_wrapper.tcl -notrace
+source zynq_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/mips_core'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ryan4/Desktop/CO_LAB/LAB6/homework/vivado/mips_core'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinix/Vivado/2017.3/data/ip'.
-WARNING: [IP_Flow 19-3664] IP 'zynq_system_auto_pc_0' generated file not found 'c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_0/stats.txt'. Please regenerate to continue.
-Command: link_design -top zynq_system_wrapper -part xc7z020clg484-1
+Command: link_design -top zynq_wrapper -part xc7z020clg484-1
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ip/zynq_system_axi_ahblite_bridge_0_0/zynq_system_axi_ahblite_bridge_0_0.dcp' for cell 'zynq_system_i/axi_ahblite_bridge_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ip/zynq_system_mips_core_0_0/zynq_system_mips_core_0_0.dcp' for cell 'zynq_system_i/mips_core_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ip/zynq_system_proc_sys_reset_0_0/zynq_system_proc_sys_reset_0_0.dcp' for cell 'zynq_system_i/proc_sys_reset_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ip/zynq_system_processing_system7_0_0/zynq_system_processing_system7_0_0.dcp' for cell 'zynq_system_i/processing_system7_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ip/zynq_system_xlconstant_0_0/zynq_system_xlconstant_0_0.dcp' for cell 'zynq_system_i/xlconstant_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ip/zynq_system_auto_pc_0/zynq_system_auto_pc_0.dcp' for cell 'zynq_system_i/axi_interconnect_0/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ryan4/Desktop/CO_LAB/LAB6/homework/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq/ip/zynq_axi_ahblite_bridge_0_0/zynq_axi_ahblite_bridge_0_0.dcp' for cell 'zynq_i/axi_ahblite_bridge_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ryan4/Desktop/CO_LAB/LAB6/homework/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq/ip/zynq_mips_core_0_0/zynq_mips_core_0_0.dcp' for cell 'zynq_i/mips_core_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ryan4/Desktop/CO_LAB/LAB6/homework/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq/ip/zynq_proc_sys_reset_0_0/zynq_proc_sys_reset_0_0.dcp' for cell 'zynq_i/proc_sys_reset_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ryan4/Desktop/CO_LAB/LAB6/homework/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq/ip/zynq_processing_system7_0_0/zynq_processing_system7_0_0.dcp' for cell 'zynq_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ryan4/Desktop/CO_LAB/LAB6/homework/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq/ip/zynq_xlconstant_0_0/zynq_xlconstant_0_0.dcp' for cell 'zynq_i/xlconstant_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/ryan4/Desktop/CO_LAB/LAB6/homework/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq/ip/zynq_auto_pc_0/zynq_auto_pc_0.dcp' for cell 'zynq_i/axi_interconnect_0/s00_couplers/auto_pc'
 INFO: [Netlist 29-17] Analyzing 1118 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2017.3
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ip/zynq_system_processing_system7_0_0/zynq_system_processing_system7_0_0.xdc] for cell 'zynq_system_i/processing_system7_0/inst'
-Finished Parsing XDC File [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ip/zynq_system_processing_system7_0_0/zynq_system_processing_system7_0_0.xdc] for cell 'zynq_system_i/processing_system7_0/inst'
-Parsing XDC File [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ip/zynq_system_proc_sys_reset_0_0/zynq_system_proc_sys_reset_0_0_board.xdc] for cell 'zynq_system_i/proc_sys_reset_0/U0'
-Finished Parsing XDC File [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ip/zynq_system_proc_sys_reset_0_0/zynq_system_proc_sys_reset_0_0_board.xdc] for cell 'zynq_system_i/proc_sys_reset_0/U0'
-Parsing XDC File [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ip/zynq_system_proc_sys_reset_0_0/zynq_system_proc_sys_reset_0_0.xdc] for cell 'zynq_system_i/proc_sys_reset_0/U0'
-Finished Parsing XDC File [c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq_system/ip/zynq_system_proc_sys_reset_0_0/zynq_system_proc_sys_reset_0_0.xdc] for cell 'zynq_system_i/proc_sys_reset_0/U0'
+Parsing XDC File [c:/Users/ryan4/Desktop/CO_LAB/LAB6/homework/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq/ip/zynq_processing_system7_0_0/zynq_processing_system7_0_0.xdc] for cell 'zynq_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/ryan4/Desktop/CO_LAB/LAB6/homework/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq/ip/zynq_processing_system7_0_0/zynq_processing_system7_0_0.xdc] for cell 'zynq_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/ryan4/Desktop/CO_LAB/LAB6/homework/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq/ip/zynq_proc_sys_reset_0_0/zynq_proc_sys_reset_0_0_board.xdc] for cell 'zynq_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [c:/Users/ryan4/Desktop/CO_LAB/LAB6/homework/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq/ip/zynq_proc_sys_reset_0_0/zynq_proc_sys_reset_0_0_board.xdc] for cell 'zynq_i/proc_sys_reset_0/U0'
+Parsing XDC File [c:/Users/ryan4/Desktop/CO_LAB/LAB6/homework/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq/ip/zynq_proc_sys_reset_0_0/zynq_proc_sys_reset_0_0.xdc] for cell 'zynq_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [c:/Users/ryan4/Desktop/CO_LAB/LAB6/homework/vivado/zynq_system/zynq_system.srcs/sources_1/bd/zynq/ip/zynq_proc_sys_reset_0_0/zynq_proc_sys_reset_0_0.xdc] for cell 'zynq_i/proc_sys_reset_0/U0'
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-16 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+16 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 644.859 ; gain = 338.566
+link_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 645.062 ; gain = 338.746
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -50,7 +49,7 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.605 . Memory (MB): peak = 652.434 ; gain = 7.574
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.543 . Memory (MB): peak = 652.641 ; gain = 7.578
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Starting Logic Optimization Task
@@ -58,42 +57,42 @@ Starting Logic Optimization Task
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 2 inverter(s) to 10 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 139cb1cd2
+Phase 1 Retarget | Checksum: 1933babee
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.533 . Memory (MB): peak = 1100.871 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.538 . Memory (MB): peak = 1100.078 ; gain = 0.000
 INFO: [Opt 31-389] Phase Retarget created 85 cells and removed 116 cells
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 13287144e
+Phase 2 Constant propagation | Checksum: 1b52a7274
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.677 . Memory (MB): peak = 1100.871 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.692 . Memory (MB): peak = 1100.078 ; gain = 0.000
 INFO: [Opt 31-389] Phase Constant propagation created 17 cells and removed 42 cells
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 13b0498dd
+Phase 3 Sweep | Checksum: 1c2433aae
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.972 . Memory (MB): peak = 1100.871 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.995 . Memory (MB): peak = 1100.078 ; gain = 0.000
 INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 162 cells
 
 Phase 4 BUFG optimization
-Phase 4 BUFG optimization | Checksum: 13b0498dd
+Phase 4 BUFG optimization | Checksum: 1c2433aae
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1100.871 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1100.078 ; gain = 0.000
 INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
 
 Phase 5 Shift Register Optimization
-Phase 5 Shift Register Optimization | Checksum: 13b0498dd
+Phase 5 Shift Register Optimization | Checksum: 1c2433aae
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1100.871 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1100.078 ; gain = 0.000
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1100.871 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 1f99da997
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1100.078 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 138745f65
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1100.871 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1100.078 ; gain = 0.000
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
@@ -110,26 +109,26 @@ Starting PowerOpt Patch Enables Task
 INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 4 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
 Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 8
-Ending PowerOpt Patch Enables Task | Checksum: cb22e9af
+Ending PowerOpt Patch Enables Task | Checksum: 1397d0cbd
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1294.281 ; gain = 0.000
-Ending Power Optimization Task | Checksum: cb22e9af
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1312.398 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1397d0cbd
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1294.281 ; gain = 193.410
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:37 . Memory (MB): peak = 1312.398 ; gain = 212.320
 INFO: [Common 17-83] Releasing license: Implementation
-37 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+37 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1294.281 ; gain = 649.422
+opt_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:49 . Memory (MB): peak = 1312.398 ; gain = 667.336
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1294.281 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.runs/impl_1/zynq_system_wrapper_opt.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_drc -file zynq_system_wrapper_drc_opted.rpt -pb zynq_system_wrapper_drc_opted.pb -rpx zynq_system_wrapper_drc_opted.rpx
-Command: report_drc -file zynq_system_wrapper_drc_opted.rpt -pb zynq_system_wrapper_drc_opted.pb -rpx zynq_system_wrapper_drc_opted.rpx
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1312.398 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ryan4/Desktop/CO_LAB/LAB6/homework/vivado/zynq_system/zynq_system.runs/impl_1/zynq_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file zynq_wrapper_drc_opted.rpt -pb zynq_wrapper_drc_opted.pb -rpx zynq_wrapper_drc_opted.rpx
+Command: report_drc -file zynq_wrapper_drc_opted.rpt -pb zynq_wrapper_drc_opted.pb -rpx zynq_wrapper_drc_opted.rpx
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.runs/impl_1/zynq_system_wrapper_drc_opted.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/ryan4/Desktop/CO_LAB/LAB6/homework/vivado/zynq_system/zynq_system.runs/impl_1/zynq_wrapper_drc_opted.rpt.
 report_drc completed successfully
 INFO: [Chipscope 16-241] No debug cores found in the current design.
 Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
@@ -143,27 +142,27 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 Running DRC as a precondition to command place_design
 INFO: [DRC 23-27] Running DRC with 2 threads
 WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[10] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[6]) which is driven by a register (zynq_system_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[10] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[6]) which is driven by a register (zynq_system_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[11] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[7]) which is driven by a register (zynq_system_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[11] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[7]) which is driven by a register (zynq_system_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[12] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[8]) which is driven by a register (zynq_system_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[12] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[8]) which is driven by a register (zynq_system_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[13] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[9]) which is driven by a register (zynq_system_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[14] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[10]) which is driven by a register (zynq_system_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[4] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[0]) which is driven by a register (zynq_system_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[4] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[0]) which is driven by a register (zynq_system_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[5] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[1]) which is driven by a register (zynq_system_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[5] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[1]) which is driven by a register (zynq_system_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[6] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[2]) which is driven by a register (zynq_system_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[6] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[2]) which is driven by a register (zynq_system_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[7] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[3]) which is driven by a register (zynq_system_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[7] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[3]) which is driven by a register (zynq_system_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[8] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[4]) which is driven by a register (zynq_system_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[8] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[4]) which is driven by a register (zynq_system_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[9] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[5]) which is driven by a register (zynq_system_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[9] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[5]) which is driven by a register (zynq_system_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-INFO: [DRC REQP-1725] DSP_Abus_sign_bit_alert: zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[10] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[6]) which is driven by a register (zynq_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[10] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[6]) which is driven by a register (zynq_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[11] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[7]) which is driven by a register (zynq_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[11] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[7]) which is driven by a register (zynq_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[12] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[8]) which is driven by a register (zynq_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[12] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[8]) which is driven by a register (zynq_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[13] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[9]) which is driven by a register (zynq_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[14] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[10]) which is driven by a register (zynq_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[4] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[0]) which is driven by a register (zynq_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[4] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[0]) which is driven by a register (zynq_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[5] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[1]) which is driven by a register (zynq_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[5] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[1]) which is driven by a register (zynq_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[6] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[2]) which is driven by a register (zynq_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[6] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[2]) which is driven by a register (zynq_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[7] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[3]) which is driven by a register (zynq_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[7] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[3]) which is driven by a register (zynq_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[8] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[4]) which is driven by a register (zynq_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[8] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[4]) which is driven by a register (zynq_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[9] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[5]) which is driven by a register (zynq_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[9] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[5]) which is driven by a register (zynq_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [DRC REQP-1725] DSP_Abus_sign_bit_alert: zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
 INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 21 Warnings, 1 Advisories
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 
@@ -173,92 +172,92 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1294.281 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1312.398 ; gain = 0.000
 Phase 1.1 Placer Initialization Netlist Sorting | Checksum: b4262e7d
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1294.281 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1312.398 ; gain = 0.000
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1294.281 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1312.398 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: e1e85cae
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1294.281 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1312.398 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 15efc9148
+Phase 1.3 Build Placer Netlist Model | Checksum: 75707dc3
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1294.281 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1312.398 ; gain = 0.000
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 15efc9148
+Phase 1.4 Constrain Clocks/Macros | Checksum: 75707dc3
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1294.281 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 15efc9148
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1312.398 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 75707dc3
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1294.281 ; gain = 0.000
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1312.398 ; gain = 0.000
 
 Phase 2 Global Placement
-Phase 2 Global Placement | Checksum: 1d2c81264
+Phase 2 Global Placement | Checksum: fec12f21
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1294.281 ; gain = 0.000
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1312.398 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 1d2c81264
+Phase 3.1 Commit Multi Column Macros | Checksum: fec12f21
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1294.281 ; gain = 0.000
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1312.398 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 12ac138c0
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1c66fda82
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1294.281 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1312.398 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 14de8f5f9
+Phase 3.3 Area Swap Optimization | Checksum: 19d802350
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1294.281 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1312.398 ; gain = 0.000
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 14de8f5f9
+Phase 3.4 Pipeline Register Optimization | Checksum: 19d802350
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1294.281 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1312.398 ; gain = 0.000
 
 Phase 3.5 Timing Path Optimizer
-Phase 3.5 Timing Path Optimizer | Checksum: 14de8f5f9
+Phase 3.5 Timing Path Optimizer | Checksum: 19d802350
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1294.281 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1312.398 ; gain = 0.000
 
 Phase 3.6 Fast Optimization
-Phase 3.6 Fast Optimization | Checksum: 20f06f2bc
+Phase 3.6 Fast Optimization | Checksum: 14593c39f
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1294.281 ; gain = 0.000
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1312.398 ; gain = 0.000
 
 Phase 3.7 Small Shape Detail Placement
-Phase 3.7 Small Shape Detail Placement | Checksum: 1586cdd5d
+Phase 3.7 Small Shape Detail Placement | Checksum: 10bd45fe5
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1294.281 ; gain = 0.000
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1312.398 ; gain = 0.000
 
 Phase 3.8 Re-assign LUT pins
-Phase 3.8 Re-assign LUT pins | Checksum: d20e6c6e
+Phase 3.8 Re-assign LUT pins | Checksum: 16e301d13
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1294.281 ; gain = 0.000
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1312.398 ; gain = 0.000
 
 Phase 3.9 Pipeline Register Optimization
-Phase 3.9 Pipeline Register Optimization | Checksum: d20e6c6e
+Phase 3.9 Pipeline Register Optimization | Checksum: 16e301d13
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1294.281 ; gain = 0.000
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1312.398 ; gain = 0.000
 
 Phase 3.10 Fast Optimization
-Phase 3.10 Fast Optimization | Checksum: 95fa9f7a
+Phase 3.10 Fast Optimization | Checksum: 17121d3b1
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1294.281 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 95fa9f7a
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1312.398 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 17121d3b1
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1294.281 ; gain = 0.000
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1312.398 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -266,58 +265,58 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: bb27fb5e
+Post Placement Optimization Initialization | Checksum: 22af22ab2
 
 Phase 4.1.1.1 BUFG Insertion
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
 INFO: [Place 46-31] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
-Phase 4.1.1.1 BUFG Insertion | Checksum: bb27fb5e
+Phase 4.1.1.1 BUFG Insertion | Checksum: 22af22ab2
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1294.281 ; gain = 0.000
-INFO: [Place 30-746] Post Placement Timing Summary WNS=-9.547. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: 1a6f9890c
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1312.398 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-9.609. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 21d68f6c6
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 1294.281 ; gain = 0.000
-Phase 4.1 Post Commit Optimization | Checksum: 1a6f9890c
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 1312.398 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 21d68f6c6
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 1294.281 ; gain = 0.000
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 1312.398 ; gain = 0.000
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 1a6f9890c
+Phase 4.2 Post Placement Cleanup | Checksum: 21d68f6c6
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 1294.281 ; gain = 0.000
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 1312.398 ; gain = 0.000
 
 Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 1a6f9890c
+Phase 4.3 Placer Reporting | Checksum: 21d68f6c6
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:31 . Memory (MB): peak = 1294.281 ; gain = 0.000
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:24 . Memory (MB): peak = 1312.398 ; gain = 0.000
 
 Phase 4.4 Final Placement Cleanup
-Phase 4.4 Final Placement Cleanup | Checksum: 10e6c4adc
+Phase 4.4 Final Placement Cleanup | Checksum: 184dbb896
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:31 . Memory (MB): peak = 1294.281 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 10e6c4adc
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:24 . Memory (MB): peak = 1312.398 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 184dbb896
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:31 . Memory (MB): peak = 1294.281 ; gain = 0.000
-Ending Placer Task | Checksum: b9138b56
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:24 . Memory (MB): peak = 1312.398 ; gain = 0.000
+Ending Placer Task | Checksum: 89cb4d9b
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:31 . Memory (MB): peak = 1294.281 ; gain = 0.000
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:24 . Memory (MB): peak = 1312.398 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-59 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+59 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:32 . Memory (MB): peak = 1294.281 ; gain = 0.000
+place_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:26 . Memory (MB): peak = 1312.398 ; gain = 0.000
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1294.281 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.runs/impl_1/zynq_system_wrapper_placed.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_io -file zynq_system_wrapper_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1294.281 ; gain = 0.000
-INFO: [runtcl-4] Executing : report_utilization -file zynq_system_wrapper_utilization_placed.rpt -pb zynq_system_wrapper_utilization_placed.pb
-report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.120 . Memory (MB): peak = 1294.281 ; gain = 0.000
-INFO: [runtcl-4] Executing : report_control_sets -file zynq_system_wrapper_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1294.281 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.690 . Memory (MB): peak = 1312.398 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ryan4/Desktop/CO_LAB/LAB6/homework/vivado/zynq_system/zynq_system.runs/impl_1/zynq_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file zynq_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 1312.398 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file zynq_wrapper_utilization_placed.rpt -pb zynq_wrapper_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.122 . Memory (MB): peak = 1312.398 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file zynq_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1312.398 ; gain = 0.000
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -329,122 +328,122 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: b0376dc1 ConstDB: 0 ShapeSum: 8dc1d95 RouteDB: 0
+Checksum: PlaceDB: 80ef3006 ConstDB: 0 ShapeSum: 8dc1d95 RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 1c8a5db70
+Phase 1 Build RT Design | Checksum: 11048a415
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 1313.512 ; gain = 19.230
-Post Restoration Checksum: NetGraph: f13f1a10 NumContArr: d766c160 Constraints: 0 Timing: 0
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:18 . Memory (MB): peak = 1312.398 ; gain = 0.000
+Post Restoration Checksum: NetGraph: d9cd1868 NumContArr: 367b8bad Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 1c8a5db70
+Phase 2.1 Create Timer | Checksum: 11048a415
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 1313.512 ; gain = 19.230
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 1312.398 ; gain = 0.000
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 1c8a5db70
+Phase 2.2 Fix Topology Constraints | Checksum: 11048a415
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 1313.512 ; gain = 19.230
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 1312.398 ; gain = 0.000
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 1c8a5db70
+Phase 2.3 Pre Route Cleanup | Checksum: 11048a415
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 1313.512 ; gain = 19.230
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 1312.398 ; gain = 0.000
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 2ec852efc
+Phase 2.4 Update Timing | Checksum: 4940fd62
 
-Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 1338.090 ; gain = 43.809
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-9.435 | TNS=-288.802| WHS=-0.146 | THS=-14.819|
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 1332.277 ; gain = 19.879
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-9.512 | TNS=-295.380| WHS=-0.143 | THS=-15.015|
 
-Phase 2 Router Initialization | Checksum: 21a7df56a
+Phase 2 Router Initialization | Checksum: d42658d0
 
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:20 . Memory (MB): peak = 1339.379 ; gain = 45.098
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:21 . Memory (MB): peak = 1332.562 ; gain = 20.164
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: da33de5e
+Phase 3 Initial Routing | Checksum: 98d335f7
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:21 . Memory (MB): peak = 1339.379 ; gain = 45.098
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:22 . Memory (MB): peak = 1332.562 ; gain = 20.164
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 1503
+ Number of Nodes with overlaps = 1380
  Number of Nodes with overlaps = 224
- Number of Nodes with overlaps = 64
- Number of Nodes with overlaps = 34
- Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 83
+ Number of Nodes with overlaps = 31
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-10.105| TNS=-677.994| WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-10.017| TNS=-1208.405| WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: 274b01604
+Phase 4.1 Global Iteration 0 | Checksum: 1c2388225
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:27 . Memory (MB): peak = 1339.379 ; gain = 45.098
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:29 . Memory (MB): peak = 1332.562 ; gain = 20.164
 
 Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 220
- Number of Nodes with overlaps = 81
- Number of Nodes with overlaps = 10
- Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 188
+ Number of Nodes with overlaps = 97
+ Number of Nodes with overlaps = 6
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-10.178| TNS=-668.759| WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-10.371| TNS=-1225.713| WHS=N/A    | THS=N/A    |
 
-Phase 4.2 Global Iteration 1 | Checksum: 1dfa4f297
+Phase 4.2 Global Iteration 1 | Checksum: 1a2343d02
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:32 . Memory (MB): peak = 1339.379 ; gain = 45.098
-Phase 4 Rip-up And Reroute | Checksum: 1dfa4f297
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:31 . Memory (MB): peak = 1332.562 ; gain = 20.164
+Phase 4 Rip-up And Reroute | Checksum: 1a2343d02
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:32 . Memory (MB): peak = 1339.379 ; gain = 45.098
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:31 . Memory (MB): peak = 1332.562 ; gain = 20.164
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 1f208430f
+Phase 5.1.1 Update Timing | Checksum: 1e66880a6
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:32 . Memory (MB): peak = 1339.379 ; gain = 45.098
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-9.975 | TNS=-639.568| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:31 . Memory (MB): peak = 1332.562 ; gain = 20.164
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-9.886 | TNS=-1134.000| WHS=N/A    | THS=N/A    |
 
  Number of Nodes with overlaps = 0
-Phase 5.1 Delay CleanUp | Checksum: 12b5b6d32
+Phase 5.1 Delay CleanUp | Checksum: 1b98b5082
 
-Time (s): cpu = 00:00:52 ; elapsed = 00:00:37 . Memory (MB): peak = 1364.141 ; gain = 69.859
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:35 . Memory (MB): peak = 1358.520 ; gain = 46.121
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 12b5b6d32
+Phase 5.2 Clock Skew Optimization | Checksum: 1b98b5082
 
-Time (s): cpu = 00:00:53 ; elapsed = 00:00:37 . Memory (MB): peak = 1364.141 ; gain = 69.859
-Phase 5 Delay and Skew Optimization | Checksum: 12b5b6d32
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:35 . Memory (MB): peak = 1358.520 ; gain = 46.121
+Phase 5 Delay and Skew Optimization | Checksum: 1b98b5082
 
-Time (s): cpu = 00:00:53 ; elapsed = 00:00:37 . Memory (MB): peak = 1364.141 ; gain = 69.859
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:35 . Memory (MB): peak = 1358.520 ; gain = 46.121
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 11afd9ec6
+Phase 6.1.1 Update Timing | Checksum: 1d0df48cb
 
-Time (s): cpu = 00:00:53 ; elapsed = 00:00:37 . Memory (MB): peak = 1364.141 ; gain = 69.859
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-9.944 | TNS=-512.597| WHS=0.068  | THS=0.000  |
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:36 . Memory (MB): peak = 1358.520 ; gain = 46.121
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-9.886 | TNS=-751.905| WHS=0.046  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 11afd9ec6
+Phase 6.1 Hold Fix Iter | Checksum: 19bf889cb
 
-Time (s): cpu = 00:00:53 ; elapsed = 00:00:37 . Memory (MB): peak = 1364.141 ; gain = 69.859
-Phase 6 Post Hold Fix | Checksum: 11afd9ec6
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:36 . Memory (MB): peak = 1358.520 ; gain = 46.121
+Phase 6 Post Hold Fix | Checksum: 19bf889cb
 
-Time (s): cpu = 00:00:53 ; elapsed = 00:00:37 . Memory (MB): peak = 1364.141 ; gain = 69.859
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:36 . Memory (MB): peak = 1358.520 ; gain = 46.121
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 2.02454 %
-  Global Horizontal Routing Utilization  = 2.17858 %
+  Global Vertical Routing Utilization    = 1.95495 %
+  Global Horizontal Routing Utilization  = 2.16388 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -455,128 +454,128 @@ Router Utilization Summary
 
 Utilization threshold used for congestion level computation: 0.85
 Congestion Report
-North Dir 1x1 Area, Max Cong = 55.8559%, No Congested Regions.
-South Dir 1x1 Area, Max Cong = 81.982%, No Congested Regions.
-East Dir 1x1 Area, Max Cong = 57.3529%, No Congested Regions.
-West Dir 1x1 Area, Max Cong = 63.2353%, No Congested Regions.
-Phase 7 Route finalize | Checksum: 1133833b0
+North Dir 1x1 Area, Max Cong = 52.2523%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 61.2613%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 55.8824%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 52.9412%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 20a5515dd
 
-Time (s): cpu = 00:00:53 ; elapsed = 00:00:37 . Memory (MB): peak = 1364.141 ; gain = 69.859
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 1358.520 ; gain = 46.121
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 1133833b0
+Phase 8 Verifying routed nets | Checksum: 20a5515dd
 
-Time (s): cpu = 00:00:53 ; elapsed = 00:00:37 . Memory (MB): peak = 1364.141 ; gain = 69.859
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 1358.520 ; gain = 46.121
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 117085229
+Phase 9 Depositing Routes | Checksum: 122c9fba3
 
-Time (s): cpu = 00:00:54 ; elapsed = 00:00:38 . Memory (MB): peak = 1364.141 ; gain = 69.859
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 1358.520 ; gain = 46.121
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-9.944 | TNS=-512.597| WHS=0.068  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-9.886 | TNS=-751.905| WHS=0.046  | THS=0.000  |
 
 WARNING: [Route 35-328] Router estimated timing not met.
 Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
-Phase 10 Post Router Timing | Checksum: 117085229
+Phase 10 Post Router Timing | Checksum: 122c9fba3
 
-Time (s): cpu = 00:00:54 ; elapsed = 00:00:38 . Memory (MB): peak = 1364.141 ; gain = 69.859
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 1358.520 ; gain = 46.121
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:54 ; elapsed = 00:00:38 . Memory (MB): peak = 1364.141 ; gain = 69.859
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:36 . Memory (MB): peak = 1358.520 ; gain = 46.121
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-76 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+76 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:57 ; elapsed = 00:00:40 . Memory (MB): peak = 1364.141 ; gain = 69.859
+route_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:38 . Memory (MB): peak = 1358.520 ; gain = 46.121
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 1364.141 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.runs/impl_1/zynq_system_wrapper_routed.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_drc -file zynq_system_wrapper_drc_routed.rpt -pb zynq_system_wrapper_drc_routed.pb -rpx zynq_system_wrapper_drc_routed.rpx
-Command: report_drc -file zynq_system_wrapper_drc_routed.rpt -pb zynq_system_wrapper_drc_routed.pb -rpx zynq_system_wrapper_drc_routed.rpx
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1358.520 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ryan4/Desktop/CO_LAB/LAB6/homework/vivado/zynq_system/zynq_system.runs/impl_1/zynq_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file zynq_wrapper_drc_routed.rpt -pb zynq_wrapper_drc_routed.pb -rpx zynq_wrapper_drc_routed.rpx
+Command: report_drc -file zynq_wrapper_drc_routed.rpt -pb zynq_wrapper_drc_routed.pb -rpx zynq_wrapper_drc_routed.rpx
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.runs/impl_1/zynq_system_wrapper_drc_routed.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/ryan4/Desktop/CO_LAB/LAB6/homework/vivado/zynq_system/zynq_system.runs/impl_1/zynq_wrapper_drc_routed.rpt.
 report_drc completed successfully
-INFO: [runtcl-4] Executing : report_methodology -file zynq_system_wrapper_methodology_drc_routed.rpt -pb zynq_system_wrapper_methodology_drc_routed.pb -rpx zynq_system_wrapper_methodology_drc_routed.rpx
-Command: report_methodology -file zynq_system_wrapper_methodology_drc_routed.rpt -pb zynq_system_wrapper_methodology_drc_routed.pb -rpx zynq_system_wrapper_methodology_drc_routed.rpx
+INFO: [runtcl-4] Executing : report_methodology -file zynq_wrapper_methodology_drc_routed.rpt -pb zynq_wrapper_methodology_drc_routed.pb -rpx zynq_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file zynq_wrapper_methodology_drc_routed.rpt -pb zynq_wrapper_methodology_drc_routed.pb -rpx zynq_wrapper_methodology_drc_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 2 threads
-INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.runs/impl_1/zynq_system_wrapper_methodology_drc_routed.rpt.
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/ryan4/Desktop/CO_LAB/LAB6/homework/vivado/zynq_system/zynq_system.runs/impl_1/zynq_wrapper_methodology_drc_routed.rpt.
 report_methodology completed successfully
-INFO: [runtcl-4] Executing : report_power -file zynq_system_wrapper_power_routed.rpt -pb zynq_system_wrapper_power_summary_routed.pb -rpx zynq_system_wrapper_power_routed.rpx
-Command: report_power -file zynq_system_wrapper_power_routed.rpt -pb zynq_system_wrapper_power_summary_routed.pb -rpx zynq_system_wrapper_power_routed.rpx
+INFO: [runtcl-4] Executing : report_power -file zynq_wrapper_power_routed.rpt -pb zynq_wrapper_power_summary_routed.pb -rpx zynq_wrapper_power_routed.rpx
+Command: report_power -file zynq_wrapper_power_routed.rpt -pb zynq_wrapper_power_summary_routed.pb -rpx zynq_wrapper_power_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-87 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+87 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
-INFO: [runtcl-4] Executing : report_route_status -file zynq_system_wrapper_route_status.rpt -pb zynq_system_wrapper_route_status.pb
-INFO: [runtcl-4] Executing : report_timing_summary -file zynq_system_wrapper_timing_summary_routed.rpt -warn_on_violation  -rpx zynq_system_wrapper_timing_summary_routed.rpx
+INFO: [runtcl-4] Executing : report_route_status -file zynq_wrapper_route_status.rpt -pb zynq_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file zynq_wrapper_timing_summary_routed.rpt -warn_on_violation  -rpx zynq_wrapper_timing_summary_routed.rpx
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
 CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
-INFO: [runtcl-4] Executing : report_incremental_reuse -file zynq_system_wrapper_incremental_reuse_routed.rpt
+INFO: [runtcl-4] Executing : report_incremental_reuse -file zynq_wrapper_incremental_reuse_routed.rpt
 INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
-INFO: [runtcl-4] Executing : report_clock_utilization -file zynq_system_wrapper_clock_utilization_routed.rpt
-Command: write_bitstream -force zynq_system_wrapper.bit
+INFO: [runtcl-4] Executing : report_clock_utilization -file zynq_wrapper_clock_utilization_routed.rpt
+Command: write_bitstream -force zynq_wrapper.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
 Running DRC as a precondition to command write_bitstream
 INFO: [DRC 23-27] Running DRC with 2 threads
 WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
-WARNING: [DRC DPIP-1] Input pipelining: DSP zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPIP-1] Input pipelining: DSP zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 input zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP output zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP output zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP output zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 output zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 output zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 output zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP multiplier stage zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC DPREG-4] DSP48E1_PregDynOpmodeZmuxP:: The DSP48E1 cell zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP with the given dynamic OPMODE[6:0] connections may lead to an unregistered asynchronous feedback path without the PREG attribute enabled. Please refer to the user guide and if one of the internal P feedback opmodes is possible for this design the PREG attribute must be set to 1, currently set to 0
-WARNING: [DRC PDRC-153] Gated clock check: Net zynq_system_i/mips_core_0/inst/ahb_ctrl/ahb_read_data_reg[31]_i_2_n_0 is a gated clock net sourced by a combinational pin zynq_system_i/mips_core_0/inst/ahb_ctrl/ahb_read_data_reg[31]_i_2/O, cell zynq_system_i/mips_core_0/inst/ahb_ctrl/ahb_read_data_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-WARNING: [DRC PDRC-153] Gated clock check: Net zynq_system_i/mips_core_0/inst/ahb_ctrl/p_3_in is a gated clock net sourced by a combinational pin zynq_system_i/mips_core_0/inst/ahb_ctrl/ahb_dm_addr_reg[10]_i_1/O, cell zynq_system_i/mips_core_0/inst/ahb_ctrl/ahb_dm_addr_reg[10]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-WARNING: [DRC PDRC-153] Gated clock check: Net zynq_system_i/mips_core_0/inst/ahb_ctrl/p_7_in is a gated clock net sourced by a combinational pin zynq_system_i/mips_core_0/inst/ahb_ctrl/ahb_im_addr_reg[10]_i_1/O, cell zynq_system_i/mips_core_0/inst/ahb_ctrl/ahb_im_addr_reg[10]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[10] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[6]) which is driven by a register (zynq_system_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[10] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[6]) which is driven by a register (zynq_system_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[11] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[7]) which is driven by a register (zynq_system_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[11] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[7]) which is driven by a register (zynq_system_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[12] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[8]) which is driven by a register (zynq_system_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[12] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[8]) which is driven by a register (zynq_system_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[13] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[9]) which is driven by a register (zynq_system_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[14] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[10]) which is driven by a register (zynq_system_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[4] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[0]) which is driven by a register (zynq_system_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[4] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[0]) which is driven by a register (zynq_system_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[5] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[1]) which is driven by a register (zynq_system_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[5] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[1]) which is driven by a register (zynq_system_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[6] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[2]) which is driven by a register (zynq_system_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[6] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[2]) which is driven by a register (zynq_system_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[7] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[3]) which is driven by a register (zynq_system_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[7] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[3]) which is driven by a register (zynq_system_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[8] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[4]) which is driven by a register (zynq_system_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[8] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[4]) which is driven by a register (zynq_system_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[9] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[5]) which is driven by a register (zynq_system_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[9] (net: zynq_system_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[5]) which is driven by a register (zynq_system_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-INFO: [DRC REQP-1725] DSP_Abus_sign_bit_alert: zynq_system_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zynq_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input zynq_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zynq_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input zynq_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP zynq_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 input zynq_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP output zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP output zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP output zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zynq_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 output zynq_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zynq_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 output zynq_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP zynq_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 output zynq_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP multiplier stage zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zynq_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage zynq_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zynq_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage zynq_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP zynq_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage zynq_i/mips_core_0/inst/cpu_top/EXE/fp_mul/U0/i_synth/MULT.OP/MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPREG-4] DSP48E1_PregDynOpmodeZmuxP:: The DSP48E1 cell zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP with the given dynamic OPMODE[6:0] connections may lead to an unregistered asynchronous feedback path without the PREG attribute enabled. Please refer to the user guide and if one of the internal P feedback opmodes is possible for this design the PREG attribute must be set to 1, currently set to 0
+WARNING: [DRC PDRC-153] Gated clock check: Net zynq_i/mips_core_0/inst/ahb_ctrl/ahb_read_data_reg[31]_i_2_n_0 is a gated clock net sourced by a combinational pin zynq_i/mips_core_0/inst/ahb_ctrl/ahb_read_data_reg[31]_i_2/O, cell zynq_i/mips_core_0/inst/ahb_ctrl/ahb_read_data_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net zynq_i/mips_core_0/inst/ahb_ctrl/p_3_in is a gated clock net sourced by a combinational pin zynq_i/mips_core_0/inst/ahb_ctrl/ahb_dm_addr_reg[10]_i_1/O, cell zynq_i/mips_core_0/inst/ahb_ctrl/ahb_dm_addr_reg[10]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net zynq_i/mips_core_0/inst/ahb_ctrl/p_7_in is a gated clock net sourced by a combinational pin zynq_i/mips_core_0/inst/ahb_ctrl/ahb_im_addr_reg[10]_i_1/O, cell zynq_i/mips_core_0/inst/ahb_ctrl/ahb_im_addr_reg[10]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[10] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[6]) which is driven by a register (zynq_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[10] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[6]) which is driven by a register (zynq_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[11] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[7]) which is driven by a register (zynq_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[11] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[7]) which is driven by a register (zynq_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[12] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[8]) which is driven by a register (zynq_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[12] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[8]) which is driven by a register (zynq_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[13] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[9]) which is driven by a register (zynq_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[14] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[10]) which is driven by a register (zynq_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[4] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[0]) which is driven by a register (zynq_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[4] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[0]) which is driven by a register (zynq_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[5] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[1]) which is driven by a register (zynq_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[5] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[1]) which is driven by a register (zynq_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[6] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[2]) which is driven by a register (zynq_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[6] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[2]) which is driven by a register (zynq_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[7] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[3]) which is driven by a register (zynq_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[7] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[3]) which is driven by a register (zynq_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[8] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[4]) which is driven by a register (zynq_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[8] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[4]) which is driven by a register (zynq_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[9] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[5]) which is driven by a register (zynq_i/mips_core_0/inst/ahb_ctrl/cpu_rstn_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0 has an input control pin zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/mem_reg_0/ADDRARDADDR[9] (net: zynq_i/mips_core_0/inst/cpu_top/IF/instr_mem/addra[5]) which is driven by a register (zynq_i/mips_core_0/inst/cpu_top/IF/fetch_pc_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC REQP-1725] DSP_Abus_sign_bit_alert: zynq_i/mips_core_0/inst/cpu_top/EXE/fp_add/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
 INFO: [Vivado 12-3199] DRC finished with 0 Errors, 44 Warnings, 2 Advisories
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
@@ -587,11 +586,11 @@ Loading route data...
 Processing options...
 Creating bitmap...
 Creating bitstream...
-Writing bitstream ./zynq_system_wrapper.bit...
+Writing bitstream ./zynq_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
 INFO: [Common 17-83] Releasing license: Implementation
-105 Infos, 67 Warnings, 1 Critical Warnings and 0 Errors encountered.
+105 Infos, 66 Warnings, 1 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1764.910 ; gain = 374.250
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 28 13:46:37 2023...
+write_bitstream: Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1763.098 ; gain = 377.242
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  3 18:35:49 2023...

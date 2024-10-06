@@ -31,6 +31,7 @@ output reg          [31:0] fp_rd_data;
 reg                 [31:0] REG_F [0:31];
 reg                  [5:0] i;
 
+
 //write back
 always @(posedge clk or negedge rstn) begin
     if(!rstn) begin

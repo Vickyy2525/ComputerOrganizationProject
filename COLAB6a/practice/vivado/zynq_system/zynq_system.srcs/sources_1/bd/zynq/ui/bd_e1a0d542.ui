@@ -1,0 +1,39 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y -10 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y -30 -defaultsOSRD
+preplace inst mips_core_0 -pg 1 -lvl 4 -y 230 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 3 -y 370 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -y 300 -defaultsOSRD
+preplace inst axi_ahblite_bridge_0 -pg 1 -lvl 3 -y 170 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 2 -y 150 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 90 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 1 4 450J -10 NJ -10 NJ -10 NJ
+preplace netloc axi_ahblite_bridge_0_m_ahb_hwdata 1 3 1 1030
+preplace netloc axi_ahblite_bridge_0_m_ahb_hprot 1 3 1 N
+preplace netloc axi_ahblite_bridge_0_m_ahb_htrans 1 3 1 1050
+preplace netloc axi_ahblite_bridge_0_m_ahb_hsize 1 3 1 1070
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 440
+preplace netloc axi_ahblite_bridge_0_m_ahb_hwrite 1 3 1 1080
+preplace netloc mips_core_0_S_HRESP 1 3 1 N
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 20 400 440
+preplace netloc mips_core_0_S_HREADY 1 3 1 1040
+preplace netloc xlconstant_0_dout 1 3 1 1130J
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 440J -30 NJ -30 NJ -30 NJ
+preplace netloc axi_ahblite_bridge_0_M_AHB 1 3 1 1130
+preplace netloc axi_interconnect_0_M00_AXI 1 2 1 N
+preplace netloc mips_core_0_S_HRDATA 1 3 1 1060
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 3 450 20 720 0 1110J
+preplace netloc axi_ahblite_bridge_0_m_ahb_hburst 1 3 1 1090
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 10 390 460 30 730 10 1100J
+preplace netloc axi_ahblite_bridge_0_m_ahb_haddr 1 3 1 1120
+levelinfo -pg 1 -10 230 590 880 1230 1350 -top -40 -bot 440
+",
+}
+{
+   da_board_cnt: "1",
+   da_clkrst_cnt: "1",
+   da_ps7_cnt: "1",
+}

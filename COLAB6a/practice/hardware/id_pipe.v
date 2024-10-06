@@ -25,12 +25,17 @@ module id_pipe(
 	alu_src1_fp,
 	alu_src2_fp,
 	imm,
-	rd_addr,
+	rd_addr_dx,
 	mem_data,
 	mem_data_fp,
 	fp_operation_dx,
 	ahb_rf_addr,
-	ahb_rf_data
+	ahb_rf_data,
+
+	rs_addr,
+	fp_rs_addr,
+	fp_rs_addr_reg,		// delay one clock
+	fp_rt_addr_reg		// delay one clock
 );
 input			  		   clk;
 input			  		   rstn;
@@ -58,26 +63,30 @@ output 				[31:0] alu_src2;
 output 				[31:0] alu_src1_fp;
 output 				[31:0] alu_src2_fp;
 output 				[15:0] imm;
-output 				 [4:0] rd_addr;
+output 				 [4:0] rd_addr_dx;
 output 				[31:0] mem_data;
 output 				[31:0] mem_data_fp;
 output 					   fp_operation_dx;
 input 				 [4:0] ahb_rf_addr;
 output 				[31:0] ahb_rf_data;
 
+output				 [4:0] rs_addr;
+output				 [4:0] fp_rs_addr;
+output				 [4:0] fp_rs_addr_reg;		// delay one clock
+output				 [4:0] fp_rt_addr_reg;		// delay one clock
 
 reg 				[31:0] REG_F [0:31];
 integer 				   i;
 wire				[31:0] rs_data;
 wire				[31:0] rt_data;
 wire				[31:0] rd_data;
-wire				 [4:0] rs_addr;
+// wire				 [4:0] rs_addr;
 wire				 [4:0] rt_addr;
 wire				 [4:0] rd_addr;
 wire				[31:0] fp_rs_data;
 wire				[31:0] fp_rt_data;
 wire				[31:0] fp_rd_data;
-wire				 [4:0] fp_rs_addr;
+// wire				 [4:0] fp_rs_addr;
 wire				 [4:0] fp_rt_addr;
 wire				 [4:0] fp_srd_addr;
 
@@ -143,9 +152,14 @@ id_dcu id_dcu(
 	.alu_src1_fp		(alu_src1_fp		),
 	.alu_src2_fp		(alu_src2_fp		),
 	.imm				(imm				),
-	.rd_addr			(rd_addr			),
+	.rd_addr_dx			(rd_addr_dx			),
 	.mem_data			(mem_data			),
-	.mem_data_fp		(mem_data_fp		)
+	.mem_data_fp		(mem_data_fp		),
+	
+	// .rs_addr_reg		(rs_addr_reg		),
+    // .rt_addr_reg		(rt_addr_reg		),
+	.fp_rs_addr_reg		(fp_rs_addr_reg		),
+    .fp_rt_addr_reg		(fp_rt_addr_reg		)
 );
 
 endmodule

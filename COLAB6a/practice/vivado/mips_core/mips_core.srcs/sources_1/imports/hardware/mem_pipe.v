@@ -55,9 +55,9 @@ wire 				[31:0] data_mem_dout;
 reg 				[10:0] data_mem_addr;
 reg 				[31:0] data_mem_din;
 reg 					   data_mem_we;
-reg 					   MW_mem_read_xm;
-reg 				[31:0] MDR_tmp;
-reg 				[31:0] MDR_fp_tmp;
+reg 					   mem_read_mw;
+reg 				[31:0] mem_data_to_reg_tmp;
+reg 				[31:0] mem_data_to_reg_fp_tmp;
 reg 					   ahb_dm_wen_reg;
 
 always @(posedge clk) begin
@@ -90,27 +90,27 @@ always @(posedge clk or negedge rstn)
 	if (!rstn) begin
 		mem_to_reg_mw 		<= 1'b0;
 		reg_write_mw 		<= 1'b0;
-		MDR_tmp				<= 32'b0;
-		MDR_fp_tmp			<= 32'b0;
+		mem_data_to_reg_tmp				<= 32'b0;
+		mem_data_to_reg_fp_tmp			<= 32'b0;
 		alu_out_mw			<= 32'b0;
 		alu_out_fp_mw		<= 32'b0;
 		rd_addr_mw			<= 5'b0;
 		
 	end
 	else begin
-		mem_to_reg_mw 		<= mem_to_reg_xm;
-		reg_write_mw 		<= reg_write_xm;
-		MDR_tmp				<= (mem_read_xm && !fp_operation_xm) ? data_mem_dout : mem_data_to_reg;
-		MDR_fp_tmp			<= (mem_read_xm && fp_operation_xm) ? data_mem_dout : mem_data_to_reg_fp;
-		alu_out_mw			<= alu_out_xm;
-		alu_out_fp_mw		<= alu_out_fp_xm;
-		rd_addr_mw 			<= rd_addr_xm;
-		fp_operation_mw		<= fp_operation_xm;
-		MW_mem_read_xm		<= mem_read_xm;
+		mem_to_reg_mw 				<= mem_to_reg_xm;
+		reg_write_mw 				<= reg_write_xm;
+		mem_data_to_reg_tmp			<= (mem_read_xm && !fp_operation_xm) ? data_mem_dout : mem_data_to_reg;
+		mem_data_to_reg_fp_tmp		<= (mem_read_xm && fp_operation_xm) ? data_mem_dout : mem_data_to_reg_fp;
+		alu_out_mw					<= alu_out_xm;
+		alu_out_fp_mw				<= alu_out_fp_xm;
+		rd_addr_mw 					<= rd_addr_xm;
+		fp_operation_mw				<= fp_operation_xm;
+		mem_read_mw					<= mem_read_xm;
 	end
 
-	assign mem_data_to_reg = MW_mem_read_xm ? data_mem_dout : MDR_tmp;			//check lw, sram delay 1 cycle
-	assign mem_data_to_reg_fp = MW_mem_read_xm ? data_mem_dout : MDR_fp_tmp;		//check lwc1, sram delay 1 cycle
+	assign mem_data_to_reg = mem_read_mw ? data_mem_dout : mem_data_to_reg_tmp;			//check lw, sram delay 1 cycle
+	assign mem_data_to_reg_fp = mem_read_mw ? data_mem_dout : mem_data_to_reg_fp_tmp;		//check lwc1, sram delay 1 cycle
 
 
 sram data_mem(

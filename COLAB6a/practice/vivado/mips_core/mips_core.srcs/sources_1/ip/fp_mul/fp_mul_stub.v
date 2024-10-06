@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
-// Date        : Tue Nov 28 13:39:15 2023
+// Date        : Sun Dec  3 18:46:46 2023
 // Host        : DESKTOP-JSVIPOD running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               c:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/mips_core/mips_core.srcs/sources_1/ip/fp_mul/fp_mul_stub.v
+//               c:/Users/ryan4/Desktop/CO_LAB/LAB6/homework/vivado/mips_core/mips_core.srcs/sources_1/ip/fp_mul/fp_mul_stub.v
 // Design      : fp_mul
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg484-1

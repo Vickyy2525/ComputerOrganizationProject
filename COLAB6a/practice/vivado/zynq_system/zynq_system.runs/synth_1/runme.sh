@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/ryan4/Desktop/CO_LAB/LAB6/practice/vivado/zynq_system/zynq_system.runs/synth_1'
+HD_PWD='C:/Users/ryan4/Desktop/CO_LAB/LAB6/homework/vivado/zynq_system/zynq_system.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log zynq_system_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source zynq_system_wrapper.tcl
+EAStep vivado -log zynq_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source zynq_wrapper.tcl
